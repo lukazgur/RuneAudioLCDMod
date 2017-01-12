@@ -1,0 +1,12 @@
+[Unit]
+Description=Control mpd service
+After=dhcpcd.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/controlScript.sh
+RestartSec=30
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
