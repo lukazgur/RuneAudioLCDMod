@@ -4,7 +4,7 @@ After=dhcpcd.service
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/controlScript.sh
+ExecStart=/usr/bin/control_script.sh
 RestartSec=30
 Restart=on-failure
 
